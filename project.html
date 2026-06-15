@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi Malhotra — Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f6f1;
+            font-family: Arial, sans-serif;
+            color: #1a1a1a;
+        }
+
+        /* NAV */
+        nav {
+            background-color: #ffffff;
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #16A34A;
+            position: sticky;
+            top: 0;
+        }
+        nav .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #16A34A;
+        }
+        nav a {
+            color: #374151;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+        }
+        nav a:hover { color: #16A34A; }
+
+        /* HERO */
+        .hero {
+            background-color: #ffffff;
+            padding: 70px 40px;
+            text-align: center;
+            border-bottom: 3px solid #16A34A;
+        }
+        .hero h1 {
+            font-size: 52px;
+            color: #1a1a1a;
+        }
+        .hero h1 span { color: #16A34A; }
+        .hero .role {
+            font-size: 18px;
+            color: #6B7280;
+            margin-top: 10px;
+        }
+        .hero .about {
+            max-width: 750px;
+            margin: 20px auto 0;
+            font-size: 16px;
+            color: #374151;
+            line-height: 1.9;
+        }
+        .hero .badge {
+            display: inline-block;
+            background-color: #16A34A;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 6px 18px;
+            border-radius: 99px;
+            margin-top: 20px;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #16A34A;
+            margin-bottom: 16px;
+            margin-top: 50px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+
+        /* CARDS */
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            border-color: #16A34A;
+        }
+        .card-left h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+        .card-left p {
+            font-size: 14px;
+            color: #6B7280;
+        }
+        .card-right {
+            font-size: 13px;
+            color: #16A34A;
+            font-weight: 600;
+            white-space: nowrap;
+            margin-left: 16px;
+        }
+
+        /* SKILLS */
+        .skills-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .skill-pill {
+            background-color: #F0FDF4;
+            color: #16A34A;
+            border: 1px solid #BBF7D0;
+            border-radius: 99px;
+            padding: 6px 16px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* CONTACT */
+        .contact-card {
+            background-color: #ffffff;
+            border: 1px solid #16A34A;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+        .contact-card p {
+            font-size: 16px;
+            color: #374151;
+            margin-bottom: 10px;
+        }
+        .contact-card a {
+            color: #16A34A;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+            color: #9CA3AF;
+            border-top: 1px solid #E5E7EB;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <span class="logo">Vidhi Malhotra</span>
+        <div>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#hackathons">Hackathons</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero" id="about">
+        <h1>Vidhi <span>Malhotra</span></h1>
+        <p class="role">Computer Science Student · Mody University, Laxmangarh · First Year</p>
+        <p class="about">Curious and passionate, I've always been interested in dealing with real world projects that not just develop my tech skills - it's more about giving the world some better ideas that can really make a big difference. I love exploring how just a single code can lead into doing thousands of tasks all together clearly and beautifully. Through this portfolio, I aim to show my approach as an Engineer who values meaning and logic.</p>
+        <span class="badge">Open to Opportunities</span>
+    </div>
+
+    <div class="container">
+
+        <!-- SKILLS -->
+        <p class="section-title">Skills</p>
+        <div class="skills-wrap">
+            <span class="skill-pill">C Programming</span>
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Python (Learning)</span>
+            <span class="skill-pill">Cloud Computing</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">HTML & CSS</span>
+            <span class="skill-pill">Content Writing</span>
+            <span class="skill-pill">Blog Writing</span>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <p class="section-title" id="experience">Experience</p>
+        <div class="card">
+            <div class="card-left">
+                <h3>Cloud Computing Intern</h3>
+                <p>DecodeLabs - Working on real cloud infrastructure projects</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>Microsoft Student Ambassador</h3>
+                <p>Registered & actively working towards selection</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+
+        <!-- HACKATHONS -->
+        <p class="section-title" id="hackathons">Hackathons</p>
+        <div class="card">
+            <div class="card-left">
+                <h3>FutureVerse 1.0</h3>
+                <p>Certificate of Participation</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>Team Leader - Team Coders</h3>
+                <p>Offline Hackathon - Chhotu Ram University of Science & Technology, Murthal, Haryana</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <p class="section-title" id="certifications">Certifications & Activities</p>
+        <div class="card">
+            <div class="card-left">
+                <h3>C Programming Course</h3>
+                <p>Infosys Springboard</p>
+            </div>
+            <div class="card-right">2025</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>C++ Programming - 8 Hour Course</h3>
+                <p>Infosys Springboard</p>
+            </div>
+            <div class="card-right">2025</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>Karuna Club Student Member</h3>
+                <p>Mody University Society</p>
+            </div>
+            <div class="card-right">2025</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>Google Student Campus Ambassador</h3>
+                <p>Game Night - Showcased exceptional creativity skills</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>40 Hour UAV Bootcamp</h3>
+                <p>Fundamentals of UAV, Sensors & Assembly — Mody University x MNIT Jaipur</p>
+            </div>
+            <div class="card-right">2026</div>
+        </div>
+
+        <!-- PROJECTS -->
+        <p class="section-title" id="projects">Projects</p>
+        <div class="card">
+            <div class="card-left">
+                <h3>Calculator in C</h3>
+                <p>Menu-driven calculator - functions, switch-case, loops, input validation</p>
+            </div>
+            <div class="card-right">GitHub ↗</div>
+        </div>
+        <div class="card">
+            <div class="card-left">
+                <h3>ATM Simulation in C</h3>
+                <p>Console-based ATM with PIN verification, deposit & withdrawal logic</p>
+            </div>
+            <div class="card-right">GitHub ↗</div>
+        </div>
+
+        <!-- CONTACT -->
+        <p class="section-title" id="contact">Contact</p>
+        <div class="contact-card">
+            <p>📞 +91 8955561535</p>
+            <p>📧 <a href="mailto:vidhimalhotra936@gmail.com">vidhimalhotra936@gmail.com</a></p>
+            <p>📍 Jaipur, Rajasthan, India</p>
+            <p>🎓 Mody University, Laxmangarh</p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Vidhi Malhotra · Built with HTML & CSS · Hosted on Azure Cloud
+    </footer>
+
+</body>
+</html>
